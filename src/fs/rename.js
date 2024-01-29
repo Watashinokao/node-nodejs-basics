@@ -6,8 +6,8 @@ const rename = async () => {
       path.join("fs/files", "wrongFilename.txt"),
       path.join("fs/files", "properFilename.md")
     );
-  } catch (error) {
-    console.error("\x1b[31m" + "FS operation failed" + "\x1b[0m", error);
+  } catch {
+    console.error("\x1b[31m" + "FS operation failed" + "\x1b[0m");
   }
 };
 
